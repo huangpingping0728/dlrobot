@@ -255,10 +255,10 @@ int turn_on_robot::VoltageToPercent(float voltage) const
     const float battery_voltage_v = voltage;
 
     // 电压分段阈值（单位：V）
-    const float kVoltageThresholdVeryLow = 10.0f;  // 低于此值：极低电量
-    const float kVoltageThresholdLow       = 12.0f;  // 低于此值：低电量
-    const float kVoltageThresholdMedium    = 14.0f;  // 低于此值：中等电量
-    const float kVoltageThresholdHigh      = 16.0f;  // 低于此值：较高电量；>= 此值：满电
+    const float kVoltageThresholdVeryLow = 23.0f;  // 低于此值：极低电量
+    const float kVoltageThresholdLow       = 29.0f;  // 低于此值：低电量
+    const float kVoltageThresholdMedium    = 32.0f;  // 低于此值：中等电量
+    const float kVoltageThresholdHigh      = 35.0f;  // 低于此值：较高电量；>= 此值：满电
 
     int battery_percent = 100;//默认值
 
